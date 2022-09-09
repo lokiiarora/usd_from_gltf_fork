@@ -194,7 +194,7 @@ bool RegisterPlugins(const std::string& path, Logger* logger) {
     const std::string why =
         search_path.empty() ? "Could not locate plugin search path."
                             : "No plugins found at search path: " + search_path;
-    Log<UFG_ERROR_LOAD_PLUGINS>(logger, "", why.c_str());
+    Log<UFG_ERROR_LOAD_PLUGINS>(logger, "", why.c_str(), "", search_path.c_str());
     return false;
   }
 
