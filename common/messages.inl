@@ -25,7 +25,7 @@
 #endif  // UFG_MSG0
 
 UFG_MSG3(ERROR, ASSERT                       , "%s(%d) : ASSERT(%s)", const char*, file, int, line, const char*, expression)
-UFG_MSG1(ERROR, LOAD_PLUGINS                 , "Unable to load USD plugins. %s from path %s", const char*, why, const char*, path)
+UFG_MSG1(ERROR, LOAD_PLUGINS                 , "Unable to load USD plugins. %s from path %s", const char*, why)
 UFG_MSG1(ERROR, ARGUMENT_UNKNOWN             , "Unknown flag: %s", const char*, text)
 UFG_MSG0(ERROR, ARGUMENT_PATHS               , "Non-even number of paths. Expected: src dst [src dst ...].")
 UFG_MSG2(ERROR, ARGUMENT_EXCEPTION           , "%s: %s", const char*, id, const char*, err)
